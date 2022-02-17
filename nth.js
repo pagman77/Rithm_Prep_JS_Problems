@@ -1,0 +1,1 @@
+const nth = (arr, num) => num >= 0 ? arr[num] : arr[arr.length + num]

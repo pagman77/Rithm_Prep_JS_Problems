@@ -1,0 +1,1 @@
+const hasAZero = num => num.toString().split("").some(a => a === "0")

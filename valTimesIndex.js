@@ -1,0 +1,1 @@
+const valTimesIndex = arr => arr.map((x, i) => x * i)
