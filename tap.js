@@ -1,3 +1,5 @@
-function tap(){
-  // add whatever parameters you deem necessary - good luck!
+function tap(arr, callback){
+  callback(arr);
+
+  return arr
 }
