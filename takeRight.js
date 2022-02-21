@@ -8,7 +8,12 @@ function takeRight(arr, val){
   }
 
   let reversed = arr.reverse();
+  let trimmed = []
 
-  return reversed.splice(0, val)
+  for (let i = 0; i < val; i++){
+    trimmed.push(reversed[i])
+  }
+
+  return trimmed.reverse();
 
 }

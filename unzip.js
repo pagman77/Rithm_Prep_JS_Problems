@@ -1,3 +1,13 @@
-function unzip(){
-  // add whatever parameters you deem necessary - good luck!
+function unzip(arr){
+
+  let bigGroup = [];
+  let litleGroup = [];
+
+  for (let i = 0; i < arr.length; i++){
+    }
+  }
+
+
+
+  return newGroup
 }
