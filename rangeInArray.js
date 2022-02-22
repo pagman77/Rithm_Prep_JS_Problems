@@ -1,12 +1,20 @@
-function rangeInArray(arr, start, end){
+function rangeInArray(arr, start, end) {
   let sum = 0;
 
-  if (end > arr.length -1){
-    end = arr.length-1
-  }
-
-  for (let i = start; i <= end; i++){
-      sum += arr[i]
+  if (start === undefined && end === undefined) {
+    return arr.reduce((a, b) => a + b);
+  } else if (end === undefined) {
+    for (let i = start; i < arr.length; i++) {
+      sum += arr[i];
+    }
+  } else if (end > arr.length) {
+    for (let i = start; i < arr.length; i++) {
+      sum += arr[i];
+    }
+  } else {
+    for (let i = start; i <= end; i++) {
+      sum += arr[i];
+    }
   }
   return sum
-}
+};

@@ -1,3 +1,3 @@
 function hasNoDuplicates(arr){
-  return arr.sort().some((x,i) => x !== arr[i+1])
+  return arr.sort().every((x,i) => x !== arr[i+1])
 }
